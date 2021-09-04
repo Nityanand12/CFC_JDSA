@@ -49,7 +49,7 @@ class CustomHeap<K extends Comparable<K>> {
       K temp= al.get(idx);
       al.set(idx, al.get(minimum));
       al.set(minimum, temp);
-      downHeapify(idx);
+      downHeapify(minimum);
     }
   }
   private int parent(int idx){
